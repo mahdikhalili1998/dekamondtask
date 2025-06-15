@@ -1,26 +1,67 @@
 .dashboard {
-  max-width: 600px;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 2rem;
-  background: #fff;
+
   border-radius: 12px;
   text-align: center;
 
-  img {
-    border-radius: 50%;
-    margin-top: 1rem;
-    width: 120px;
-    height: 120px;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
 
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  img {
+    border-radius: 50%;
+    margin: 1rem auto;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
   }
 
   p {
     margin-top: 0.5rem;
     font-size: 1rem;
     color: #333;
+  }
+  button {
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: inherit;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+
+    h1 {
+      font-size: 1.6rem;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
   }
 }

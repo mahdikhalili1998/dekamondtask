@@ -37,6 +37,7 @@ export default function AuthPage() {
   return (
     <div className={styles.auth}>
       <h1>ورود</h1>
+      <p>برای ورود شماره همراه خود را وارد کنید </p>
       <Input value={phone} onChange={setPhone} placeholder="شماره موبایل" />
       {error && <p className={styles.error}>{error}</p>}
       <Button onClick={handleLogin}>ورود</Button>
